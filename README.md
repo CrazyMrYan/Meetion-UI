@@ -8,14 +8,13 @@
 
                                 
 
-                            git clone https://github.com/CrazyMrYan/Meetion-UI.git
+                            git clone https://github.com/CrazyMrYan/Meetion-UI.gi
                                 
 
                             
 | 第二步
 
-解压meetion.rar
-
+解压Meetion_V0-01.rar
 
 | 第三步
 
