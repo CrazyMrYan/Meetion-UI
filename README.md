@@ -23,6 +23,12 @@ git clone https://github.com/CrazyMrYan/Meetion-UI
 | 第四步
 
 将meetion.js和meetion.css引入至需要用到的文件里面
+上线版本：meetion.min.css
+上线版本：meetion.min.js
+
+开发版本：meetion.css
+开发版本：meetion.js
+
 
 注意：meetion.js需要放在最后面引入 否会失去某些功能
                                 
@@ -33,3 +39,4 @@ git clone https://github.com/CrazyMrYan/Meetion-UI
                             <script src="meetion.js"></script>
                                 
 
+最近更新MeetionUi的0.0.2版本  增加了对话框和Icon 快去更新你的Meetion吧
