@@ -4,13 +4,10 @@
 安装说明
 | 第一步
 
-使用Git 直接克隆 或者下载压缩包 点击去往 Git传送门
+使用Git 直接克隆 或者下载压缩包 
 
                                 
-
-                            git clone https://github.com/CrazyMrYan/Meetion-UI.gi
-                                
-
+git clone https://github.com/CrazyMrYan/Meetion-UI
                             
 | 第二步
 
