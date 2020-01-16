@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://crazy.lovemysoul.vip/meetion-min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+
+    <title>Meetion标准使用案例</title>
+    <style>
+        h2{
+            margin: 20px 10px 0 15px;
+        }
+        h1{margin-bottom: 50px;}
+    </style>
+</head>
+
+<body>
+    
+    <div style="margin: 20px auto;background: #fff; width: 800px;min-height: 600px;">
+        <h1 style="font-size:24px;">
+            Meetion标准使用案例
+        </h1>
+        <h2>
+            Button
+        </h2>
+        <button class="M_Btn" style="margin: 5px;">默认按钮</button>
+        <button class="M_Btn_success" style="margin: 5px;">成功按钮</button>
+        <button class="M_Btn_info" style="margin: 5px;">信息按钮</button>
+        <button class="M_Btn_warning" style="margin: 5px;">警告按钮</button>
+        <button class="M_Btn_danger" style="margin: 5px;">危险按钮</button>
+        <br>
+        <button class="M_Btn_Default" style="margin: 5px;">默认按钮</button>
+        <button class="M_Btn_Success" style="margin: 5px;">成功按钮</button>
+        <button class="M_Btn_Info" style="margin: 5px;">信息按钮</button>
+        <button class="M_Btn_Warning" style="margin: 5px;">警告按钮</button>
+        <button class="M_Btn_Danger" style="margin: 5px;">危险按钮</button>
+        <br>
+        <button class="M_Btn_Default_Circular" style="margin: 5px;">
+            <i class="fa fa-search fa-1x"></i>
+        </button>
+        <button class="M_Btn_Success_Circular" style="margin: 5px;">
+            <i class="fa fa-search fa-1x"></i>
+        </button>
+        <button class="M_Btn_Warning_Circular" style="margin: 5px;">
+            <i class="fa fa-search fa-1x"></i>
+        </button>
+        <button class="M_Btn_Danger_Circular" style="margin: 5px;">
+            <i class="fa fa-search fa-1x"></i>
+        </button>
+        <button class="M_Btn_Info_Circular" style="margin: 5px;">
+            <i class="fa fa-search fa-1x"></i>
+        </button>
+        <br>
+        <button class="M_Btn_Default_" style="margin: 5px;">默认按钮</button>
+        <button class="M_Btn_Success_" style="margin: 5px;">成功按钮</button>
+        <button class="M_Btn_Info_" style="margin: 5px;">信息按钮</button>
+        <button class="M_Btn_Warning_" style="margin: 5px;">警告按钮</button>
+        <button class="M_Btn_Danger_" style="margin: 5px;">危险按钮</button>
+        <h2>
+            Input
+        </h2>
+        <input type="text" style="height: 24px;width: 180px;" value="" placeholder="请输入内容" class="M_Ipt">
+
+        <input type="password" style="height: 24px;width: 180px;" placeholder="请输入密码" class="M_Ipt">
+
+        <div class="Flex">
+            <input class='M_Check 
+        M_Checkbox' id='M_Checkbox1' type='checkbox'>
+            <label style="margin: 5px;" class='M_Btn_Checkbox' for='M_Checkbox1'></label>
+            <input class='M_Check M_Checkbox_ios' id='M_Checkbox2' type='checkbox'>
+            <label style="margin: 5px;" class='M_Btn_Checkbox' for='M_Checkbox2'></label>
+            <input class='M_Check M_Item_Checkbox' id='M_Checkbox3' type='checkbox'>
+            <label style="margin: 5px;" class='M_Btn_Checkbox' data-tg-off='OFF' data-tg-on='ON'
+                for='M_Checkbox3'></label>
+            <input class='M_Check M_Checkbox_flat' id='M_Checkbox4' type='checkbox'>
+            <label style="margin: 5px;" class='M_Btn_Checkbox' for='M_Checkbox4'></label>
+            <input class='M_Check M_Checkbox_flip' id='M_Checkbox5' type='checkbox'>
+            <label style="margin: 5px;" class='M_Btn_Checkbox' data-tg-off='Nope' data-tg-on='Yeah!' for='M_Checkbox5'>
+            </label>
+        </div>
+        <h2>
+            Link
+        </h2>
+        <a href="javascript:;" class="M_A_default" style="margin-left: 10px;"> 默认链接</a>
+        <a href="javascript:;" class="M_A_success" style="margin-left: 10px;">成功链接</a>
+        <a href="javascript:;" class="M_A_info" style="margin-left: 10px;">信息链接</a>
+        <a href="javascript:;" class="M_A_warning" style="margin-left: 10px;">警告链接</a>
+        <a href="javascript:;" class="M_A_danger" style="margin-left: 10px;">危险链接</a>
+        <br>
+            
+        <a href="javascript:;" class="M_A_Default" style="margin-left: 10px;">默认链接</a>
+        <a href="javascript:;" class="M_A_Success" style="margin-left: 10px;">成功链接</a>
+        <a href="javascript:;" class="M_A_Info" style="margin-left: 10px;">信息链接</a>
+        <a href="javascript:;" class="M_A_Warning" style="margin-left: 10px;">警告链接</a>
+        <a href="javascript:;" class="M_A_Aanger" style="margin-left: 10px;">危险链接</a>
+                                        
+        <h2>
+           Table
+        </h2>
+        <div style="margin:10px 0;">
+            <ul class="M_table">
+                <li class="M_Headitem Flex">
+                    <div>Name</div>
+                    <div>Sex</div>
+                    <div>Age</div>
+                    <div>Address</div>
+                </li>
+                <li class="M_Tritem_ Flex">
+                    <div>严先生</div>
+                    <div>男</div>
+                    <div>24岁</div>
+                    <div>
+                    <button class="M_Btn" style="margin: 0 5px;font-size: 12px;">查看</button>
+                    <button class="M_Btn_danger" style="margin: 0 5px;font-size: 12px;">删除</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div style="margin:10px 0;">
+            <ul class="M_table">
+                <li class="M_Headitem_Blue Flex">
+                    <div>Name</div>
+                    <div>Sex</div>
+                    <div>Age</div>
+                    <div>Address</div>
+                </li>
+                <li class="M_Tritem Flex">
+                    <div>严先生</div>
+                    <div>男</div>
+                    <div>24岁</div>
+                    <div><button class="M_Btn_info" style="font-size: 12px;" >查看<button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="margin:10px 0;">
+            <ul class="M_table">
+                <li class="M_Headitem_Gray Flex">
+                    <div>Name</div>
+                    <div>Sex</div>
+                    <div>Age</div>
+                    <div>Address</div>
+                </li>
+                <li class="M_Tritem Flex">
+                    <div>严先生</div>
+                    <div>男</div>
+                    <div>24岁</div>
+                    <div>广东省广州市天河区</div>
+                </li>
+            </ul>
+        </div>
+            
+    <!-- html -->
+    <button style="margin: 10px;" class="M_Btn_Success_" id="SuccessMsg">成功提醒</button>
+    <button style="margin: 10px;" class="M_Btn_Danger_" id="ErrorMsg">失败提醒</button>
+    <button style="margin: 10px;" class="M_Btn_Info_" id="InfoMsg">信息提醒</button>
+    <button style="margin: 10px;" class="M_Btn_Warning_" id="WarningMsg">警告提醒</button>
+    <!-- script -->             
+                                                                
+    </div>
+</body>
+<script src="http://crazy.lovemysoul.vip/meetion-min.js"></script>
+<script>
+         $('#SuccessMsg').click(function(){
+            showMessage('Success','success',2000)
+        })
+        $('#ErrorMsg').click(function(){
+            showMessage('Error','error',2000)
+        })
+        $('#InfoMsg').click(function(){
+            showMessage('Info','info',2000)
+        })
+        $('#WarningMsg').click(function(){
+            showMessage('Warning','warning',2000)
+        })
+</script>
+</html>
