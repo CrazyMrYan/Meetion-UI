@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/meetion.css">
+    <script src="../../src/util/jquery.min3.3.1.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="M_Breadcrumb_" style="background: #fff;margin-bottom: 15px;">
+            [
+            {"name":"组件","link":"javascript:;"}
+            ,{"name":"表单元素","link":"javascript:;"}
+            ]
+        </div>
+        <div class="" style="width: 100%;margin: 15px 0;">
+            <p class="M_P_Title" style="margin:10px 0;background: #fff;padding: 15px;"> 表单元素 Input</p>
+        </div>
+        <div class=" Flex">
+            <div class="M_Card" style="flex: 1;margin:0 20px;">
+                <p class="M_P_Title"> 文本输入框</p>
+                <input type="text" style="height: 24px;width: 180px;margin: 15px 0;" value="" placeholder="请输入内容"
+                    class="M_Ipt M_ipt_D"><br>
+                <input type="text" style="height: 24px;width: 180px;margin: 15px 0;" value="" placeholder="请输入内容"
+                    class="M_Ipt"><br>
+            </div>
+            <div class="M_Card" style="flex: 1;margin:0 20px;">
+                <p class="M_P_Title"> 密码输入框</p>
+                <input type="password" style="height: 24px;width: 180px;margin: 15px 0;" placeholder="请输入密码"
+                    class="M_Ipt M_Ipt_Show"><br>
+                <input type="password" style="height: 24px;width: 180px;margin: 15px 0;" placeholder="请输入密码"
+                    class="M_Ipt">
+            </div>
+
+        </div>
+        <div class="Flex">
+            <div class="M_Card Flex" style="flex: 1;margin: 20px;">
+                <div style="flex: 1;">
+                    <p class="M_P_Title">带动画复选框</p>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim M_checkbox-anim">
+                        <input type="checkbox" name="hobby"><i class="bui-checkbox"></i>打篮球
+                    </label>
+                    <br>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim M_checkbox-anim">
+                        <input type="checkbox" name="hobby"><i class="bui-checkbox"></i>踢足球
+                    </label><br>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim M_checkbox-anim">
+                        <input type="checkbox" name="hobby"><i class="bui-checkbox"></i>看妹子
+                    </label>
+                    <br>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim M_checkbox-anim">
+                        <input type="checkbox" name="hobby"><i class="bui-checkbox"></i>看小说
+                    </label>
+                    <br>
+                </div>
+                <div style="flex: 1;">
+                    <p class="M_P_Title">不带动画复选框</p>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim">
+                        <input type="checkbox" value="8" name="hobby"><i class="bui-checkbox"></i>看妹子
+                    </label>
+                    <br>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim">
+                        <input type="checkbox" value="9" name="hobby"><i class="bui-checkbox"></i>看小说
+                    </label><br>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim">
+                        <input type="checkbox" value="10" name="hobby"><i class="bui-checkbox"></i>打篮球
+                    </label>
+                    <br>
+                    <label style="display: inline-block;margin: 6px 0;" class="M_radios-anim">
+                        <input type="checkbox" value="11" name="hobby"><i class="bui-checkbox"></i>踢足球
+                    </label>
+                </div>
+            </div>
+            <div class="M_Card Flex" style="flex: 1;margin: 20px;">
+                <div style="flex: 1;">
+                    <p class="M_P_Title"> 带动画单选框</p>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label M_radios-anim">
+                        <input type="radio" value="4" name="Fruits"><i class="bui-radios"></i>香蕉
+                    </label><br>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label M_radios-anim">
+                        <input type="radio" value="5" name="Fruits"><i class="bui-radios"></i>苹果
+                    </label><br>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label M_radios-anim">
+                        <input type="radio" value="6" name="Fruits"><i class="bui-radios"></i>梨子
+                    </label><br>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label M_radios-anim">
+                        <input type="radio" value="7" name="Fruits"><i class="bui-radios"></i>樱桃
+                    </label><br>
+                </div>
+                <div style="flex: 1;">
+                    <p class="M_P_Title"> 不带动画单选框</p>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label">
+                        <input type="radio" value="0" name="Fruits2"><i class="bui-radios"></i>香蕉
+                    </label><br>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label">
+                        <input type="radio" value="1" name="Fruits2"><i class="bui-radios"></i>苹果
+                    </label><br>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label">
+                        <input type="radio" value="2" name="Fruits2"><i class="bui-radios"></i>梨子
+                    </label><br>
+                    <label style="display: inline-block;margin: 5px 0;" class="M_radios-label">
+                        <input type="radio" value="3" name="Fruits2"><i class="bui-radios"></i>樱桃
+                    </label><br>
+                </div>
+            </div>
+
+        </div>
+        <div class="Flex">
+            <div class="M_Card" style="margin: 0 20px;flex: 1;">
+                <p class="M_P_Title"> 下拉选择器 </p>
+                <div style="width: 200px;margin: 25px 0;" class="main1"></div>
+                <div style="width: 200px;margin: 15px 0;" class="main2"></div>
+            </div>
+            <div class="M_Card" style="margin: 0 20px;flex: 1;">
+                <p class="M_P_Title"> 开关 </p>
+                <div class="Flex" style="height: 34px;">
+                    <input class='M_Check 
+                M_Checkbox' id='M_Checkbox1' type='checkbox'>
+                    <label style="margin: 5px;" class='M_Btn_Checkbox' for='M_Checkbox1'></label>
+
+                    <input class='M_Check M_Checkbox_ios' id='M_Checkbox2' type='checkbox'>
+                    <label style="margin: 5px;" class='M_Btn_Checkbox' for='M_Checkbox2'></label>
+
+                    <input class='M_Check M_Item_Checkbox' id='M_Checkbox3' type='checkbox'>
+                    <label style="margin: 5px;" class='M_Btn_Checkbox' data-tg-off='OFF' data-tg-on='ON'
+                        for='M_Checkbox3'></label>
+
+                    <input class='M_Check M_Checkbox_flat' id='M_Checkbox4' type='checkbox'>
+                    <label style="margin: 5px;" class='M_Btn_Checkbox' for='M_Checkbox4'></label>
+
+                    <input class='M_Check M_Checkbox_flip' id='M_Checkbox5' type='checkbox'>
+                    <label style="margin: 5px;" class='M_Btn_Checkbox' data-tg-off='Nope' data-tg-on='Yeah!'
+                        for='M_Checkbox5'>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="../../src/meetion.js"></script>
+<script>
+    $(".M_radios-label>input:radio[value='2']").attr('checked', 'true');
+    $(".M_radios-label>input:radio[value='5']").attr('checked', 'true');
+
+    function change(data, e) {
+        showMessage("你选择了" + data.name, 'warning', 2000);
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        var select1 = new $Selector({
+            eleSelector: ".main1",
+            options: [
+                { name: "香蕉", value: "0" },
+                { name: "梨子", value: "1" },
+                { name: "西瓜", value: "2" },
+                { name: "苹果", value: "3" }
+            ],
+            defaultText: "请选择"
+        });
+    })
+    document.addEventListener("DOMContentLoaded", function () {
+        const select2 = new $Selector({
+            eleSelector: ".main2",
+            options: [
+                { name: "选项1", value: "0" },
+                { name: "选项2", value: "1" },
+                { name: "选项3", value: "2" }
+            ],
+            defaultText: "请选择"
+        });
+    })
+    $(document).ready(function () {
+        $("#M_Checkbox1").on('click', function (e) {
+            console.log(e)
+            clickSwitch()
+        });
+
+        var clickSwitch = function () {
+            if ($("#M_Checkbox1").is(':checked')) {
+                console.log("在ON的状态下");
+            } else {
+                console.log("在OFF的状态下");
+            }
+        };
+    });
+    $(document).ready(function () {
+        $("#M_Checkbox4").on('click', function () {
+            clickSwitch()
+        });
+
+        var clickSwitch = function () {
+            if ($("#M_Checkbox4").is(':checked')) {
+                console.log("在ON的状态下");
+            } else {
+                console.log("在OFF的状态下");
+            }
+        };
+    });
+    $(document).ready(function () {
+        $("#M_Checkbox3").on('click', function () {
+            clickSwitch()
+        });
+
+        var clickSwitch = function () {
+            if ($("#M_Checkbox3").is(':checked')) {
+                console.log("在ON的状态下");
+            } else {
+                console.log("在OFF的状态下");
+            }
+        };
+    });
+    $(document).ready(function () {
+        $("#M_Checkbox2").on('click', function () {
+            clickSwitch()
+        });
+
+        var clickSwitch = function () {
+            if ($("#M_Checkbox2").is(':checked')) {
+                console.log("在ON的状态下");
+            } else {
+                console.log("在OFF的状态下");
+            }
+        };
+    });
+    $(document).ready(function () {
+        $("#M_Checkbox5").on('click', function () {
+            clickSwitch()
+        });
+
+        var clickSwitch = function () {
+            if ($("#M_Checkbox5").is(':checked')) {
+                console.log("在ON的状态下");
+            } else {
+                console.log("在OFF的状态下");
+            }
+        };
+    });
+
+
+
+</script>
+
+</html>

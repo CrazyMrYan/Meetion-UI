@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/meetion.css">
+    <script src="../../src/util/jquery.min3.3.1.js"></script>
+
+
+    <style>
+        .M_tab>ul {}
+
+        .M_tab>.activeUl {
+            height: 0;
+            border: unset;
+        }
+
+        .M_tab>ul>li {
+            background: #fff;
+            height: 80px;
+            border: 1px solid #dbdbdb;
+            border-top: unset;
+            padding: 20px;
+            border-radius: 0 5px 5px 5px;
+            font-size: 14px;
+        }
+
+        .Flex>li>p {
+            cursor: pointer;
+            padding: 6px 16px;
+            border: 1px solid #dbdbdb;
+            margin-right: 10px;
+            border-radius: 3px 3px 0 0;
+            background: #eee;
+            font-size: 14px;
+        }
+
+        .Flex>li>p:hover {
+            color: #2EA9DF;
+        }
+
+        .Flex>li>h6 {
+            padding: 6px 16px;
+            border: 1px solid #dbdbdb;
+            margin-right: 10px;
+            border-radius: 3px 3px 0 0;
+            background: #eee;
+            font-weight: 500;
+            font-size: 14px;
+            background-color: #e5e5e5 !important;
+            color: #c9c9c9 !important;
+            cursor: not-allowed !important;
+        }
+
+        .Flex>li>.activeol {
+            border-bottom: 1px solid #fff;
+            color: #333;
+            background: #fff;
+            color: #2EA9DF;
+            font-size: 16px;
+        }
+
+        .M_tab>ol {
+            padding-top: 1px;
+            box-sizing: border-box;
+        }
+
+        .M_Tab2 {
+            width: 47.6%;
+        }
+
+        .M_Tab2>ol {
+            height: 40px;
+        }
+
+        .M_Tab2>ol>li {
+            width: 80px;
+            line-height: 40px;
+            margin-left: 20px;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px 0 0 5px;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .M_Tab2>ul {
+            overflow: hidden;
+            height: 200px;
+            width: 100%;
+            position: relative;
+            left: -20px;
+            border-radius: 0 5px 5px 5px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .M_Tab2>ul>li {
+            height: 200px;
+            width: 100%;
+            background: #fdf6ec;
+            padding: 20px;
+            display: none;
+            box-sizing: border-box;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .M_Tab2>ul>.M_acitveCenter {
+            display: block;
+        }
+
+        .M_Tab2>ol>.M_acitveNav {
+            background-color: #dbdbdb;
+            position: relative;
+            left: -20px;
+            text-align: center;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="M_Breadcrumb_" style="background: #fff;margin-bottom: 15px;">
+            [
+            {"name":"组件","link":"javascript:;"}
+            ,{"name":"选项卡","link":"javascript:;"}
+            ]
+        </div>
+        <div class="" style="width: 100%;margin: 15px 0;">
+            <p class="M_P_Title" style="margin:10px 0;background: #fff;padding: 15px;"> 选项卡 Tab</p>
+        </div>
+        <div class="Flex">
+            <div class="M_tab" style="overflow: hidden;flex: 1; margin-left: 40px;">
+                <ol class="Flex" style="margin-top: 10px;">
+                    <li>
+                        <p class="activeol"> <i class="fa fa-heart"></i> </p>
+                    </li>
+                    <li>
+                        <p> <i class="fa fa-star"></i> </p>
+                    </li>
+                    <li>
+                        <p> <i class="fa fa-bookmark"></i> </p>
+                    </li>
+                </ol>
+                <ul class="" style="overflow: hidden;">
+                    <li>
+                        许多年过去了，人们说陈年旧事可以被埋葬，然而我终于明白这是错的，因为往事会自行爬上来。回首前尘，我意识到在过去二十六年里，自己始终在窥视着那荒芜的小径。
+                    </li>
+                </ul>
+                <ul class="activeUl" style="overflow: hidden;">
+                    <li>
+                        在你心里，最能代表“春天”的是什么呢？ 是此刻窗外的猫叫。 是衬衫和短裤。 是“沾衣欲湿杏花雨，吹面不寒杨柳风”。 是家里每年春天，母亲亲手沏的那一壶新茶，温暖又缠绵。
+                        也许是压抑不住的出行拍摄的冲动吧。
+                    </li>
+                </ul>
+                <ul class="activeUl" style="overflow: hidden;">
+                    <li>
+                        一位真正的作家永远只为内心写作，只有内心才会真实地告诉他，他的自私、他的高尚是多么突出。内心让他真实地了解自己，一旦了解了自己也就了解了世界。
+                    </li>
+                </ul>
+            </div>
+            <div class="M_tab" style="overflow: hidden;flex: 1; margin-left: 40px;margin-right: 40px">
+                <ol class="Flex" style="margin-top: 10px;">
+                    <li>
+                        <p class="activeol"> 选项卡一 </p>
+                    </li>
+                    <li>
+                        <p> 选项卡二 </p>
+                    </li>
+                    <li>
+                        <h6> 禁用选项卡 </h6>
+                    </li>
+                </ol>
+                <ul class="" style="overflow: hidden;">
+                    <li>
+                        许多年过去了，人们说陈年旧事可以被埋葬，然而我终于明白这是错的，因为往事会自行爬上来。回首前尘，我意识到在过去二十六年里，自己始终在窥视着那荒芜的小径。
+                    </li>
+                </ul>
+                <ul class="activeUl" style="overflow: hidden;">
+                    <li>
+                        在你心里，最能代表“春天”的是什么呢？ 是此刻窗外的猫叫。 是衬衫和短裤。 是“沾衣欲湿杏花雨，吹面不寒杨柳风”。 是家里每年春天，母亲亲手沏的那一壶新茶，温暖又缠绵。
+                        也许是压抑不住的出行拍摄的冲动吧。
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="Flex">
+            <div class="M_Tab2 Flex" style="margin: 20px 40px">
+                <ol class="">
+                    <li style="background:#409eff;" class="M_acitveNav"><i class="fa fa-heart"></i></li>
+                    <li style="background: #67c23a;"><i class="fa fa-star"></i></li>
+                    <li style="background:#e6a23c;"><i class="fa fa-bookmark"></i> </li>
+                </ol>
+                <ul class="">
+                    <li class="M_acitveCenter">
+                        一位真正的作家永远只为内心写作，只有内心才会真实地告诉他，他的自私、他的高尚是多么突出。内心让他真实地了解自己，一旦了解了自己也就了解了世界。
+                    </li>
+                    <li>在你心里，最能代表“春天”的是什么呢？ 是此刻窗外的猫叫。 是衬衫和短裤。 是“沾衣欲湿杏花雨，吹面不寒杨柳风”。 是家里每年春天，母亲亲手沏的那一壶新茶，温暖又缠绵。
+                        也许是压抑不住的出行拍摄的冲动吧。</li>
+                    <li>一位真正的作家永远只为内心写作，只有内心才会真实地告诉他，他的自私、他的高尚是多么突出。内心让他真实地了解自己，一旦了解了自己也就了解了世界。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../../src/meetion.js"></script>
+<script>
+    // tab1
+    $(".M_Tab2 ol li").click(function () {
+        let index = $(this).index()
+        $(".M_Tab2 ul li").removeClass('M_acitveCenter')
+        $(".M_Tab2 ol li").removeClass('M_acitveNav')
+        $(".M_Tab2 ul li:eq(" + index + ")").addClass('M_acitveCenter')
+        $(this).addClass('M_acitveNav')
+
+    })
+
+    var tab1 = $('.Flex>li>p')
+    var M_tabBox = $('.M_tab')
+    for (let a = 0; a < M_tabBox.length; a++) {
+        M_tabBoxF(a)
+    }
+    function M_tabBoxF(a) {
+        for (let z = 0; z < tab1.length; z++) {
+            tab1Fun(z, a)
+        }
+    }
+    function tab1Fun(z, a) {
+        $(`.M_tab:eq(${a})>.Flex>li>p:eq(${z})`).click(function () {
+            if (!$(`.M_tab:eq(${a})>.Flex>li>p:eq(${z})`).hasClass('activeol')) {
+                $(`.M_tab:eq(${a})>.Flex>li>p`).removeClass('activeol')
+                $(`.M_tab:eq(${a})>.Flex>li>p:eq(${z})`).addClass('activeol')
+                $(`.M_tab:eq(${a})>ul`).addClass('activeUl')
+                $(`.M_tab:eq(${a})>ul:eq(${z})`).removeClass('activeUl')
+            }
+        })
+    }
+
+</script>
+
+</html>

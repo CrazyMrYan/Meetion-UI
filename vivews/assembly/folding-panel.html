@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/meetion.css">
+    <script src="../../src/util/jquery.min3.3.1.js"></script>
+
+
+    <style>
+        .M_Panel {
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.4);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .M_Panel>.M_Panel_Item {
+            width: 100%;
+        }
+
+        .M_Panel>.M_Panel_Item>div {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: all .2s ease-in-out
+        }
+
+        .M_Panel>.M_Panel_Item>.M_Panel_Body {
+            background: #fff;
+            padding: 20px;
+            display: none;
+        }
+
+        .M_Panel>.M_Panel_Item>.M_Panel_Head {
+            border-bottom: 1px solid #e8e9eb;
+            background: #f5f5f5;
+            font-weight: 600;
+            padding: 10px 20px;
+            -moz-user-select: none;
+            /*火狐*/
+            -webkit-user-select: none;
+            /*webkit浏览器*/
+            -ms-user-select: none;
+            /*IE10*/
+            -khtml-user-select: none;
+            /*早期浏览器*/
+            -o-user-select: none;
+            /* Opera*/
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .M_Panel>.M_Panel_Item>.M_Panel_Head>i {
+            width: 15px;
+        }
+
+        .M_Panel>.M_Panel_Item>.M_PanelDB {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="M_Breadcrumb_" style="background: #fff;margin-bottom: 15px;">
+            [
+            {"name":"组件","link":"javascript:;"}
+            ,{"name":"折叠面板","link":"javascript:;"}
+            ]
+        </div>
+        <div class="" style="width: 100%;margin: 15px 0;">
+            <p class="M_P_Title" style="margin:10px 0;background: #fff;padding: 15px;"> 折叠面板 FoldingPanel</p>
+        </div>
+        <div class="Flex" style="min-height: 700px;background: #fff;">
+            <div style="flex:1">
+                <div class="M_Panel" style="margin: 20px;width: 800px;">
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 不关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 不关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 不关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 不关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 不关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 不关闭其他
+                        </div>
+                    </div>
+                </div>
+                <div class="M_Panel M_Panel-No" style="margin: 20px;width: 800px;">
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 关闭其他
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1;">
+                <div class="M_Panel" style="margin: 20px 0;width: 800px;">
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head" style="background: #2EA9DF;
+                        color: #fff;
+                        border-color: #1979a3;">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 不关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 不关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head" style="background: #25ae88;
+                        color: #fff;
+                        border-color: #176b53;">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 不关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 不关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head" style="background: #4fcbf0;
+                        color: #fff;
+                        border-color: #13addb;">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 不关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 不关闭其他
+                        </div>
+                    </div>
+                </div>
+                <div class="M_Panel M_Panel-No" style="margin: 20px 0;width: 800px;">
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head" style="background: #409eff;
+                        color: #fff;
+                        border-color: #1979a3;">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head" style="background: #67c23a;
+                        color: #fff;
+                        border-color: #176b53;">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 关闭其他
+                        </div>
+                    </div>
+                    <div class="M_Panel_Item" style="width: 100%;">
+                        <div class="M_Panel_Head" style="background: #e6a23c;
+                        color: #fff;
+                        border-color: #f5dab1;">
+                            <i class="fa fa-angle-right"></i>
+                            Tab title 关闭其他
+                        </div>
+                        <div class="M_Panel_Body">
+                            Tab content 关闭其他
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src=" ../../src/meetion.js">
+</script>
+<script>
+
+    $('.M_Panel>.M_Panel_Item>.M_Panel_Head').click(function () {
+        if ($(this).siblings().hasClass('M_PanelDB')) {
+            $(this).siblings().removeClass('M_PanelDB')
+            $(this).children('i').addClass('fa-angle-right').removeClass('fa-angle-down')
+        } else {
+            $(this).siblings().addClass('M_PanelDB')
+            $(this).children('i').addClass('fa-angle-down').removeClass('fa-angle-right')
+        }
+        if ($(this).parent().parent().hasClass('M_Panel-No')) {
+            $(this).parent().siblings().children('.M_Panel_Body').removeClass('M_PanelDB')
+            $(this).parent().siblings().children('.M_Panel_Head').children('i').removeClass('fa-angle-down').addClass('fa-angle-right')
+        }
+
+    })
+
+</script>
+
+</html>

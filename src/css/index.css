@@ -1,0 +1,187 @@
+.tab_right {
+    margin-left: 220px;
+    height: 100%;
+}
+
+.tab_right>li {
+    min-height: 865px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.tab_right>.dbactive {
+    display: block;
+}
+
+.nav-left-container {
+    background-color: #1c2b36;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+}
+
+.nav-left-container li a {
+    font-size: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    padding: 15px 20px 15px 25px;
+    display: block;
+    color: #869fb1;
+}
+
+.nav-left-container .active {
+    border-left: 4px solid #19a9d5;
+}
+
+.nav-left-container li:hover {
+    background-color: #131e26;
+}
+
+.nav-left-container .active>a {
+    color: #409eff;
+}
+
+.nav-left-container-small li a {
+    font-size: 14px;
+    padding: 7px 15px 7px 52px;
+}
+
+.nav-left-container-small {
+    display: none;
+}
+
+/*(1)清除默认样式*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img,
+input,
+button {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+/*去掉input等聚焦时的蓝色边框*/
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+select,
+input {
+    vertical-align: middle;
+}
+
+/*select, input, textarea { font-size:12px; margin:0; }*/
+
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+a,
+a:hover,
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+/*只要元素需要右浮动就给元素添加一个class名为fr  */
+
+.fr {
+    float: right;
+}
+
+.ac {
+    text-align: center;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.tagsbox>.M_Tag_D>.fa-circle {
+    color: #409eff;
+}
+
+.tagsbox>.M_Tag_D {
+    color: #666;
+}
+
+.tagsbox>.M_Tag_D>i {
+    color: #e5e5e5;
+}
+
+.tagsbox>.M_Tag_D>a {
+    color: #666;
+}
+
+.tagsbox>.M_Tag {
+    border: 1px solid #e5e5e5;
+    background: #f8f8f8;
+}

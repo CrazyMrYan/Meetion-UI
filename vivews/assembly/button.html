@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/meetion.css">
+    <script src="../../src/util/jquery.min3.3.1.js"></script>
+
+
+    <style>
+        .M_card_item {
+            flex: 1;
+            height: 100px;
+            margin-right: 15px;
+        }
+
+        .M_card_item {
+            text-align: center;
+        }
+
+        .M_card_item>div {
+            border-radius: 5px;
+        }
+
+        .M_card_item>div>i {
+            font-size: 30px;
+            line-height: 60px;
+            color: #fff;
+        }
+
+        .M_card_item>div>h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .M_card_item>div>div {
+            text-align: center;
+        }
+
+        .New_table {
+            padding-right: 20px;
+        }
+
+        .New_table>li {
+            height: 35px;
+            font-size: 14px;
+            line-height: 35px;
+            border-top: 1px dotted #e5e5e5;
+            cursor: pointer;
+        }
+
+        .New_table>li:hover {
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="M_Breadcrumb_" style="background: #fff;margin-bottom: 15px;">
+            [
+            {"name":"组件","link":"javascript:;"}
+            ,{"name":"按钮","link":"javascript:;"}
+            ]
+        </div>
+        <div class="" style="width: 100%;margin: 15px 0;">
+            <p class="M_P_Title" style="margin:10px 0;background: #fff;padding: 15px;"> 按钮 Button</p>
+        </div>
+        <div class="Flex">
+            <div class="M_Card" style="height: 100%;flex: 1; margin: 0 15px 10px 20px;">
+                <h2 style="padding: 10px 0;">按钮主题</h2>
+                <button class="M_Btn" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_success" style="margin: 5px;">成功按钮</button>
+                <button class="M_Btn_info" style="margin: 5px;">信息按钮</button>
+                <button class="M_Btn_warning" style="margin: 5px;">警告按钮</button>
+                <button class="M_Btn_danger" style="margin: 5px;">危险按钮</button>
+            </div>
+            <div class="M_Card" style="height: 100%;flex: 1; margin: 0 15px 10px 20px;">
+                <h2 style="padding: 10px 0;">移入缩小</h2>
+                <button class="M_Btn_Default" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_Success" style="margin: 5px;">成功按钮</button>
+                <button class="M_Btn_Info" style="margin: 5px;">信息按钮</button>
+                <button class="M_Btn_Warning" style="margin: 5px;">警告按钮</button>
+                <button class="M_Btn_Danger" style="margin: 5px;">危险按钮</button>
+            </div>
+            <div class="M_Card" style="height: 100%;flex: 1; margin: 0 15px 10px 20px;">
+                <h2 style="padding: 10px 0;">移入边框</h2>
+                <button class="M_Btn_Default_" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_Success_" style="margin: 5px;">成功按钮</button>
+                <button class="M_Btn_Info_" style="margin: 5px;">信息按钮</button>
+                <button class="M_Btn_Warning_" style="margin: 5px;">警告按钮</button>
+                <button class="M_Btn_Danger_" style="margin: 5px;">危险按钮</button>
+            </div>
+        </div>
+        <div class="Flex">
+            <div class="M_Card" style="height: 320px;width: 400px; margin: 0 20px;">
+                <h2 style="padding: 10px 0;">按钮尺寸</h2>
+                <button class="M_Btn_Default M_Btn-Mini" style="margin: 5px;">迷你按钮</button>
+                <button class="M_Btn_Default" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_Default M_Btn-Small" style="margin: 5px;">适中按钮</button>
+                <button class="M_Btn_Default M_Btn-Big" style="margin: 5px;">大型按钮</button>
+                <br>
+                <button class="M_Btn_Success M_Btn-Mini" style="margin: 5px;">迷你按钮</button>
+                <button class="M_Btn_Success" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_Success M_Btn-Small" style="margin: 5px;">适中按钮</button>
+                <button class="M_Btn_Success M_Btn-Big" style="margin: 5px;">大型按钮</button>
+                <br>
+                <button class="M_Btn_Info M_Btn-Mini" style="margin: 5px;">迷你按钮</button>
+                <button class="M_Btn_Info" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_Info M_Btn-Small" style="margin: 5px;">适中按钮</button>
+                <button class="M_Btn_Info M_Btn-Big" style="margin: 5px;">大型按钮</button>
+                <br>
+                <button class="M_Btn_Warning M_Btn-Mini" style="margin: 5px;">迷你按钮</button>
+                <button class="M_Btn_Warning" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_Warning M_Btn-Small" style="margin: 5px;">适中按钮</button>
+                <button class="M_Btn_Warning M_Btn-Big" style="margin: 5px;">大型按钮</button>
+                <br>
+                <button class="M_Btn_Danger M_Btn-Mini" style="margin: 5px;">迷你按钮</button>
+                <button class="M_Btn_Danger" style="margin: 5px;">默认按钮</button>
+                <button class="M_Btn_Danger M_Btn-Small" style="margin: 5px;">适中按钮</button>
+                <button class="M_Btn_Danger M_Btn-Big" style="margin: 5px;">大型按钮</button>
+            </div>
+            <div class="M_Card" style="height: 320px;width: 420px; margin: 0 15px;">
+                <h2 style="padding: 10px 0;">图标按钮</h2>
+                <button class="M_Btn_Default_Circular M_Btn-Small" style="margin: 5px;">
+                    <i class="fa fa-trash-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Default_Circular M_Btn-Small" style="margin: 5px;"><i
+                        class="fa fa-star-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Default_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-left fa-lg"></i>
+                </button>
+                <button class="M_Btn_Default_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-right fa-lg"></i>
+                </button>
+                <button class="M_Btn_Default_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-search fa-lg"></i>
+                </button>
+                <button class="M_Btn_Default_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-pencil fa-lg"></i>
+                </button>
+                <button class="M_Btn_Default_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-share-alt fa-lg"></i>
+                </button>
+                <br>
+                <button class="M_Btn_Success_Circular M_Btn-Small" style="margin: 5px;">
+                    <i class="fa fa-trash-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Success_Circular M_Btn-Small" style="margin: 5px;"><i
+                        class="fa fa-star-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Success_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-left fa-lg"></i>
+                </button>
+                <button class="M_Btn_Success_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-right fa-lg"></i>
+                </button>
+                <button class="M_Btn_Success_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-search fa-lg"></i>
+                </button>
+                <button class="M_Btn_Success_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-pencil fa-lg"></i>
+                </button>
+                <button class="M_Btn_Success_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-share-alt fa-lg"></i>
+                </button>
+                <br>
+                <button class="M_Btn_Info_Circular M_Btn-Small" style="margin: 5px;">
+                    <i class="fa fa-trash-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Info_Circular M_Btn-Small" style="margin: 5px;"><i class="fa fa-star-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Info_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-left fa-lg"></i>
+                </button>
+                <button class="M_Btn_Info_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-right fa-lg"></i>
+                </button>
+                <button class="M_Btn_Info_Circular M_Btn-Small" style="margin: 5px;"> <i class="fa fa-search fa-lg"></i>
+                </button>
+                <button class="M_Btn_Info_Circular M_Btn-Small" style="margin: 5px;"> <i class="fa fa-pencil fa-lg"></i>
+                </button>
+                <button class="M_Btn_Info_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-share-alt fa-lg"></i>
+                </button>
+                <br>
+                <button class="M_Btn_Warning_Circular M_Btn-Small" style="margin: 5px;">
+                    <i class="fa fa-trash-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Warning_Circular M_Btn-Small" style="margin: 5px;"><i
+                        class="fa fa-star-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Warning_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-left fa-lg"></i>
+                </button>
+                <button class="M_Btn_Warning_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-right fa-lg"></i>
+                </button>
+                <button class="M_Btn_Warning_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-search fa-lg"></i>
+                </button>
+                <button class="M_Btn_Warning_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-pencil fa-lg"></i>
+                </button>
+                <button class="M_Btn_Warning_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-share-alt fa-lg"></i>
+                </button>
+                <br>
+                <button class="M_Btn_Danger_Circular M_Btn-Small" style="margin: 5px;">
+                    <i class="fa fa-trash-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Danger_Circular M_Btn-Small" style="margin: 5px;"><i
+                        class="fa fa-star-o fa-lg"></i>
+                </button>
+                <button class="M_Btn_Danger_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-left fa-lg"></i>
+                </button>
+                <button class="M_Btn_Danger_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-angle-right fa-lg"></i>
+                </button>
+                <button class="M_Btn_Danger_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-search fa-lg"></i>
+                </button>
+                <button class="M_Btn_Danger_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-pencil fa-lg"></i>
+                </button>
+                <button class="M_Btn_Danger_Circular M_Btn-Small" style="margin: 5px;"> <i
+                        class="fa fa-share-alt fa-lg"></i>
+                </button>
+                <!-- M_Btn_Success_Circular
+M_Btn_Warning_Circular
+M_Btn_Danger_Circular
+M_Btn_Info_Circular -->
+            </div>
+            <div class="M_Card" style="height: 320px;width: 365px; margin: 0 20px;">
+                <h2 style="padding: 10px 0;">混搭按钮</h2>
+                <a href="http://crazy.lovemysoul.vip/" target="_blank" class="M_Btn M_Btn-Small" style="margin: 5px;"
+                    rel="noopener noreferrer"><i class="fa fa-link"></i> 跳转按钮</a>
+                <button class="M_Btn_Danger M_Btn-Small" style="margin: 5px;">
+                    <i class="fa fa-trash-o"></i> 删除按钮</button>
+                <button class="M_Btn_info M_allowed M_Btn-Small" style="margin: 5px;">
+                    <i class="fa fa-share-alt"></i>
+                    禁用按钮</button>
+                <button class="M_Btn_combination" style="margin-left: 5px;margin-top: 5px;"><i
+                        class="fa fa-angle-left fa-lg"></i></button>
+                <button class="M_Btn_combination" style="margin-top: 5px;">
+                    <i class="fa fa-plus"></i></button>
+                <button class="M_Btn_combination" style="margin-top: 5px;">
+                    <i class="fa fa-trash-o"></i></button>
+
+                <button class="M_Btn_combination" style="margin-top: 5px;">
+                    <i class="fa fa-pencil"></i></button>
+                <button class="M_Btn_combination" style="margin-top: 5px;">
+                    <i class="fa fa-search"></i></button>
+                <button class="M_Btn_combination" style="margin-top: 5px;"><i
+                        class="fa fa-angle-right fa-lg"></i></button>
+
+                <br>
+                <button class="M_Btn_combination" style="margin-left: 5px;margin-top: 10px;"> 增加 </button>
+                <button class="M_Btn_combination" style="margin-top: 10px;"> 删除 </button>
+                <button class="M_Btn_combination" style="margin-top: 10px;"> 修改 </button>
+                <button class="M_Btn_combination" style="margin-top: 10px;"> 查询 </button>
+            </div>
+            <div class="M_Card" style="height: 320px;flex: 1; margin: 0 20px;">
+                <h2 style="padding: 10px 0;">铺满按钮</h2>
+                <button class="M_Btn_Default" style="margin:10px  5px;width: 100%;">默认按钮</button>
+                <button class="M_Btn_Success" style="margin:10px  5px;width: 100%;">成功按钮</button>
+                <button class="M_Btn_Info" style="margin:10px  5px;width: 100%;">信息按钮</button>
+                <button class="M_Btn_Warning" style="margin:10px  5px;width: 100%;">警告按钮</button>
+                <button class="M_Btn_Danger" style="margin: 10px 5px;width: 100%;">危险按钮</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../../src/meetion.js"></script>
+<script>
+
+
+</script>
+
+</html>

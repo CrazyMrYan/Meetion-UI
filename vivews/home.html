@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../src/meetion.css">
+    <script src="../src/util/jquery.min3.3.1.js"></script>
+
+
+    <style>
+        .M_card_item {
+            flex: 1;
+            height: 100px;
+            margin-right: 15px;
+        }
+
+        .M_card_item {
+            text-align: center;
+        }
+
+        .M_card_item>div {
+            border-radius: 5px;
+        }
+
+        .M_card_item>div>i {
+            font-size: 30px;
+            line-height: 60px;
+            color: #fff;
+        }
+
+        .M_card_item>div>h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .M_card_item>div>div {
+            text-align: center;
+        }
+
+        .New_table {
+            padding-right: 20px;
+        }
+
+        .New_table>li {
+            height: 35px;
+            font-size: 14px;
+            line-height: 35px;
+            border-top: 1px dotted #e5e5e5;
+            cursor: pointer;
+        }
+
+        .New_table>li:hover {
+            background: #f8f8f8;
+        }
+
+        .zuozhe {
+            /* background-image: url("../src/images/uugai.com_1581671566678.png"); */
+            background-repeat: no-repeat;
+
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="M_Breadcrumb_" style="background: #fff;margin-bottom: 15px;">
+            [
+            {"name":"控制台","link":"javascript:;"}
+            ,{"name":"首页","link":"javascript:;"}
+            ]
+        </div>
+        <div class="" style="width: 100%; margin: 15px 0;">
+            <p class="M_P_Title" style="margin:10px 0;background: #fff;padding: 15px;"> 首页 Home</p>
+
+            <div class="Flex">
+                <div class="M_Card M_card_item Flex">
+                    <div style="flex: 1;background: #409eff;">
+                        <i class="fa fa-user-plus"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2>751</h2>
+                        <div> 新增用户</div>
+                    </div>
+                </div>
+                <div class="M_Card M_card_item Flex">
+                    <div style="flex: 1;background: #67c23a;">
+                        <i class="fa fa-hand-pointer-o"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2>4210</h2>
+                        <div> 累计点击</div>
+                    </div>
+                </div>
+                <div class="M_Card M_card_item Flex">
+                    <div style="flex: 1; background: #e6a23c;">
+                        <i class="fa fa-question-circle "></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2>210</h2>
+                        <div> 新增问答</div>
+                    </div>
+                </div>
+                <div class="M_Card M_card_item Flex">
+                    <div style="flex: 1;background: #909399;">
+                        <i class="fa fa-at"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2>30</h2>
+                        <div> 新增互动</div>
+                    </div>
+                </div>
+                <div class="M_Card M_card_item Flex">
+                    <div style="flex: 1;background: #f56c6c;">
+                        <i class="fa fa-exchange"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2>740</h2>
+                        <div> 分享统计</div>
+                    </div>
+                </div>
+                <div class="M_Card M_card_item Flex">
+                    <div style="flex: 1;background: rgb(228, 108, 187);">
+                        <i class="fa fa-html5"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2>15</h2>
+                        <div> 新增页面</div>
+                    </div>
+                </div>
+                <div class="M_Card M_card_item Flex">
+                    <div style="flex: 1;background: rgb(154, 102, 228);">
+                        <i class="fa fa-file-code-o"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2>20</h2>
+                        <div> 新增组件</div>
+                    </div>
+                </div>
+            </div>
+            <div class="Flex">
+                <div class="M_Card" style="height: 150px;margin: 15px 0;flex: 1;">
+                    <ul class="New_table"></ul>
+                </div>
+                <div class="M_Card" style="height: 150px;margin:15px;width: 650px;">
+                    <canvas id="myCanvas" width="600" height="150">您的浏览器不支持canvas！</canvas><br />
+                </div>
+            </div>
+            <div class="Flex">
+                <div class="M_Card" style="height: 350px;margin: 0 15px 15px 0;width: 550px;">
+                    <h2
+                        style="padding: 20px 100px;text-align: center;font-size: 22px;border-bottom: 1px solid #909399;">
+                        关于Meetion-Ui的简介</h2>
+                    <ul class="M_table">
+                        <li class="M_Headitem Flex">
+                            <div>名称</div>
+                            <div>当前版本</div>
+                            <div>基于框架</div>
+                            <div>操作</div>
+                        </li>
+                        <li class="M_Tritem_ Flex">
+                            <div>Meetion-Ui</div>
+                            <div>V0.0.7</div>
+                            <div>Meetion V0.0.7</div>
+                            <div>
+                                <button class="M_Btn M_Dialogue_C" style="margin: 0 5px;font-size: 12px;">查看</button>
+                            </div>
+                        </li>
+                        <li class="M_Tritem_ Flex">
+                            <div>Meetion-Admin</div>
+                            <div>V0.0.1</div>
+                            <div>Meetion V0.0.7</div>
+                            <div>
+                                <button class="M_Btn M_Dialogue_C" style="margin: 0 5px;font-size: 12px;">查看</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="Flex" style="margin: 0 0 15px 0;">
+                        <button class="M_Btn_Default" style="flex: 1;margin: 5px;padding: 10px;"><i
+                                class="fa fa-cloud-download"></i> 下载
+                            Meetion-Admin</button>
+                        <button class="M_Btn_Success M_Btn_Success2" style="flex: 1;margin: 5px;padding: 10px;"><i
+                                class="fa fa-cloud-download"></i> 下载 Meetion-Ui</button>
+                    </div>
+                    <div>
+                        <p class="M_P_Text" style="font-size: 16px;"><b>主要特色：</b> 简单大方 / 操作便捷 / 单页面 / 基于原生 / 适合新手</p>
+                    </div>
+                </div>
+                <div class="M_Card zuozhe" style="height: 350px;flex: 1;">
+                    <p class="M_P_Title"> 作者心语</p>
+                    <p class="M_P_Text" style="font-size: 16px;margin: 10px;">我是
+                        <span class="M_A_Warning" style="font-size: 16px;">Meetion-Ui</span> 、
+                        <span class="M_A_Warning" style="font-size: 16px;">Meetion-Admin</span> 的创作者 —
+                        <span class="M_A_Default" style="font-size: 16px;">Mr.Yan </span>
+                    </p>
+                    <p class="M_P_Text" style="font-size: 16px;margin: 10px;">创作
+                        <span class="M_A_Warning" style="font-size: 16px;">Meetion</span>
+                        的 初衷
+                        呢，是因为某大型框架的样式修改较为复杂，令无数开发者头疼（当然，也包括本人在内）所以为了让开发者更敏捷更</p>
+                    <p class="M_P_Text" style="font-size: 16px;padding: 0;">
+                        迅速的去创造作品，降低开发成本并且开发者自己也可以轻松的去修改样式，造就了
+                        <span class="M_A_Warning" style="font-size: 16px;">Meetion-Ui</span>
+                        与 <span class="M_A_Warning" style="font-size: 16px;">Meetion-Admin</span> 的到来。
+                    </p>
+                    <p class="M_P_Text" style="font-size: 16px;margin: 10px;">
+                        <span class="M_A_Warning" style="font-size: 16px;">Meetion-Admin</span> 是一款 与
+                        <span class="M_A_Warning" style="font-size: 16px;">Meetion-Ui</span>
+                        相结合的单页后台管理系统 生态系统有
+                        <span class="M_A_Aanger" style="font-size: 16px;">router</span> 、
+                        <span class="M_A_Aanger" style="font-size: 16px;">request</span> 、
+                        <span class="M_A_Aanger" style="font-size: 16px;">meetion</span>
+                    </p>
+                    <p class="M_P_Text" style="margin: 10px;"></p>
+                    <p class="M_P_Text" style="font-size: 16px;margin: 10px;">送给大家一句话“
+                        <span class="M_A_Success" style="font-size: 16px;">当你想放弃时，记住你为什么开始！</span> ”
+                    </p>
+                    <p class="M_P_Text" style="font-size: 16px;margin: 10px;">
+                        <a href="https://github.com/CrazyMrYan/Meetion-UI" class="M_A_danger" target="_blank"
+                            rel="noopener noreferrer"> 去往
+                            Git 传送门</a>
+                    </p>
+                    <p class="M_P_Text" style="font-size: 16px;margin: 10px;">
+                        <a href="http://crazy.lovemysoul.vip/meetion-ui" class="M_A_danger" target="_blank"
+                            rel="noopener noreferrer"> 去往
+                            Meetion-Ui 传送门</a>
+                    </p>
+                    <p class="M_P_Text" style="font-size: 16px;margin: 10px 40px 0 0;text-align: right;"> — <span
+                            class="M_A_Default" style="font-size: 16px;">Mr.Yan </span></p>
+                </div>
+            </div>
+            <div class="M_Card" style="height: 150px;">
+                <div style="width: 100%;">
+                    <p class="M_P_Text" style="text-align: center;">Meetion-Admin · 作者：Mr.Yan</p>
+                    <p class="M_P_Text" style="text-align: center;">部分代码依赖于 Font Awesome 4.7.0 、 jQuery 3.3.1</p>
+                    <p class="M_P_Text" style="text-align: center;">参考 <a class="M_A_danger"
+                            href="https://www.iviewui.com/" target="_blank" rel="noopener noreferrer"> Iview-Ui </a> 、
+                        <a class="M_A_danger" href="https://www.layui.com/" target="_blank"
+                            rel="noopener noreferrer">Layui</a> 等部分样式，如有侵权，请联系删除</p>
+                    <p class="M_P_Text" style="text-align: center;"><a class="M_A_danger"
+                            href="https://github.com/CrazyMrYan" target="_blank" rel="noopener noreferrer">Git 项目库</a>
+                    </p>
+                    <p class="M_P_Text" style="text-align: center;">
+                        <i class="fa fa-copyright"></i> 南山下工作室所有
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="M_Dialogue_Center">
+        <div class="M_Card" style="height: 240px;width: 400px;">
+            <div style="height: 140px;">
+                <h2 style="text-align: center;font-size: 18px;margin: 10px 0;">Meetion-Ui</h2><br>
+                <h2>当前版本：V0.0.7</h2>
+                <h2>基于框架：Meetion V0.0.7</h2>
+                <a href="http://crazy.lovemysoul.vip/meetion-ui"
+                    target="_blank">http://crazy.lovemysoul.vip/meetion-ui</a><br>
+            </div>
+            <button class="M_Btn_Success M_Affirm" style="font-size: 16px;flex: 1;margin-top: 15px;width: 100%;">
+                取消
+            </button>
+        </div>
+    </div>
+    <div class="M_Dialogue_Center">
+        <div class="M_Card" style="height: 240px;">
+            <div style="height: 140px;">
+                <h2 style="text-align: center;font-size: 18px;margin: 10px 0;">Meetion-Admin</h2><br>
+                <h2>当前版本：V0.0.1</h2>
+                <h2>基于框架：Meetion V0.0.7</h2>
+                <a href="http://crazy.lovemysoul.vip/meetion-admin"
+                    target="_blank">http://crazy.lovemysoul.vip/meetion-admin</a><br>
+            </div>
+            <button class="M_Btn_Success M_Affirm" style="font-size: 16px;flex: 1;margin-top: 15px;width: 100%;">
+                取消
+            </button>
+        </div>
+    </div>
+</body>
+
+<script src="../src/meetion.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+    $('.M_Breadcrumb_').append(`<div style="
+        float: right;
+        line-height: 50px;
+        margin-right: 40px;
+        ">当前 IP : ${returnCitySN["cip"]} &nbsp;&nbsp;&nbsp; 当前地区 : ${returnCitySN["cname"]}  &nbsp;&nbsp;&nbsp;
+        <a href="http://tianqi.2345.com/api/getWeatherInfo.php" target="_blank" style="cursor: pointer;
+        color: skyblue;" >查看更多 &gt;&gt;</a>
+        </div>`
+    )
+</script>
+<script type="text/javascript">
+    //x,y 坐标,radius 半径,process 百分比,backColor 中心颜色, proColor 进度颜色, fontColor 中心文字颜色
+    function DrowProcess(x, y, radius, process, backColor, proColor, fontColor) {
+        var canvas = document.getElementById('myCanvas');
+
+        if (!canvas.getContext) {
+            return
+        } else {
+            var cts = canvas.getContext('2d');
+        }
+        cts.beginPath();
+        // 坐标移动到圆心  
+        cts.moveTo(x, y);
+        // 画圆,圆心是24,24,半径24,从角度0开始,画到2PI结束,最后一个参数是方向顺时针还是逆时针  
+        cts.arc(x, y, radius, 0, Math.PI * 2, false);
+        cts.closePath();
+        // 填充颜色  
+        cts.fillStyle = backColor;
+        cts.fill();
+
+        cts.beginPath();
+        // 画扇形的时候这步很重要,画笔不在圆心画出来的不是扇形  
+        cts.moveTo(x, y);
+        // 跟上面的圆唯一的区别在这里,不画满圆,画个扇形  
+        cts.arc(x, y, radius, Math.PI * 1.5, Math.PI * 1.5 - Math.PI * 2 * process / 100, true);
+        cts.closePath();
+        cts.fillStyle = proColor;
+        cts.fill();
+
+        //填充背景白色
+        cts.beginPath();
+        cts.moveTo(x, y);
+        cts.arc(x, y, radius - (radius * 0.26), 0, Math.PI * 2, true);
+        cts.closePath();
+        cts.fillStyle = 'rgba(255,255,255,1)';
+        cts.fill();
+
+        //在中间写字 
+        cts.font = "bold 9pt Arial";
+        cts.fillStyle = fontColor;
+        cts.textAlign = 'center';
+        cts.textBaseline = 'middle';
+        cts.moveTo(x, y);
+        cts.fillText(process + "%", x, y);
+
+    }
+    bfb = 0;
+    time = 0;
+    function Start() {
+
+        DrowProcess(60, 60, 55, bfb + 10, '#ddd', '#409eff', '#409eff');
+        DrowProcess(180, 60, 55, bfb + 20, '#ddd', '#67c23a', '#67c23a');
+        DrowProcess(300, 60, 55, bfb + 30, '#ddd', '#e6a23c', '#e6a23c');
+        DrowProcess(420, 60, 55, bfb + 40, '#ddd', '#909399', '#909399');
+        DrowProcess(540, 60, 55, bfb + 50, '#ddd', '#f56c6c', '#f56c6c');
+        t = setTimeout(Start, 20);
+
+        if (bfb > 49) {
+            clearTimeout(t);
+            bfb = 0;
+            return;
+        }
+        bfb += 1;
+
+    }
+
+    Start();
+    let newdatalist = [
+        { Title: " Meetion-Ui 增加了 Meetion-Admin 后台管理", Deta: "2020/02/10" },
+        { Title: " Meetion-Ui V0.0.7 中更新了404页面模板", Deta: "2020/02/08" },
+        { Title: " Meetion-Ui V0.0.6 中增加了面包屑导航", Deta: "2020/01/22" },
+    ]
+    var New_table = $('.New_table')
+    for (let z = 0; z < New_table.length; z++) {
+        New_tableF(z)
+    }
+    function New_tableF(z) {
+        for (let x = 0; x < newdatalist.length; x++)
+            $(`.New_table:eq(${z})`).append(`
+            <li class="Flex"><div style="flex:1"><i class="fa fa-info-circle" style="color:#909399;width:30px;text-align: center;"></i> ${newdatalist[x].Title}</div>
+                <div style="font-size:14px">${newdatalist[x].Deta}</div>
+            </li>
+        `)
+    }
+    var M_Tritem_ = $('.M_Tritem_')
+    for (let z = 0; z < M_Tritem_.length; z++) {
+        M_Tritem_Clcik(z)
+    }
+    function M_Tritem_Clcik(z) {
+
+    }
+
+</script>
+<script>
+    $('.M_Btn_Default').click(function () {
+        location.href = "https://github.com/CrazyMrYan/meetion-admin/archive/master.zip"
+    })
+    $('.M_Btn_Success2').click(function () {
+        location.href = "https://github.com/CrazyMrYan/Meetion-UI/archive/master.zip"
+    })
+
+</script>
+<script src="../src/util/util.js"></script>
+
+</html>

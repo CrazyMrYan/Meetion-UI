@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/meetion.css">
+    <script src="../../src/util/jquery.min3.3.1.js"></script>
+
+
+</head>
+
+<body>
+    <div class="">
+        <div class="M_Breadcrumb_" style="background: #fff;margin-bottom: 15px;">
+            [
+            {"name":"组件","link":"javascript:;"}
+            ,{"name":"分页","link":"javascript:;"}
+            ]
+        </div>
+        <p class="M_P_Title" style="margin:10px 0;background: #fff;padding: 15px;"> 分页 Paging</p>
+        <div class="M_Card" style="width: 33.333%;
+        height: 200px;
+        margin: 15px 0;">
+            <div class="M_Page" style="margin: 50px;"></div>
+            <div class="M_Page_s"></div>
+
+        </div>
+    </div>
+
+</body>
+<script src="../../src/meetion.js"></script>
+<script>
+
+    M_Page.initMathod({
+        params: { elemId: '.M_Page', total: 50, pageIndex: 1 },
+        requestFunction: function () {
+            console.log(M_Page.config);
+        }
+    });
+
+    // M_Page_s.initMathod({
+    //     params: { elemId: '.M_Page_s', total: 50, pageIndex: 2 },
+    //     requestFunction: function () {
+    //         console.log(M_Page_s.config);
+    //     }
+    // });
+</script>
+
+</html>

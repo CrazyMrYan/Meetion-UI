@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/meetion.css">
+    <script src="../../src/util/jquery.min3.3.1.js"></script>
+</head>
+
+<body>
+    <div class="">
+        <div class="M_Breadcrumb_" style="background: #fff;margin-bottom: 15px;">
+            [
+            {"name":"组件","link":"javascript:;"}
+            ,{"name":"模态框","link":"javascript:;"}
+            ]
+        </div>
+        <div class="" style="width: 100%;margin: 15px 0;">
+            <p class="M_P_Title" style="margin:10px 0;background: #fff;padding: 15px;"> 模态框 Dialogue</p>
+        </div>
+        <div class="M_Card">
+
+            <!-- 不一定要用到button噢  也可以使用自定义的点击 但是需要加上class -->
+            <button class="M_Btn_Default M_Dialogue_T" style="margin: 5px;">上滑出</button>
+            <button class="M_Btn_Default M_Dialogue_L" style="margin: 5px;">左滑出</button>
+            <button class="M_Btn_Default M_Dialogue_C" style="margin: 5px;">居中</button>
+            <button class="M_Btn_Default M_Dialogue_R" style="margin: 5px;">右滑出</button>
+            <button class="M_Btn_Default M_Dialogue_B" style="margin: 5px;">下滑出</button>
+            <br>
+            <button class="M_Btn_Default M_msg1" style="margin: 5px;">Success提醒</button>
+            <button class="M_Btn_Default M_msg2" style="margin: 5px;">Error提醒</button>
+            <button class="M_Btn_Default M_msg3" style="margin: 5px;">Info提醒</button>
+            <button class="M_Btn_Default M_msg4" style="margin: 5px;">Warning提醒</button>
+            <br>
+            <button class="M_Btn_Default M_Dialogue_C" style="margin: 5px;">居中对话框</button>
+            <button class="M_Btn_Default M_Dialogue_C" style="margin: 5px;">弹出Dom</button>
+
+        </div>
+
+        <!-- 配套使用对话框 -->
+        <div class="M_Dialogue_Top">
+            <div class="M_Card">
+                <p class="M_P" style="margin-top: 20px;">
+                    <span style="color: skyblue;font-weight: 700;">|</span>
+                    对话框
+                </p>
+                <div class="M_Dialogue_Content">
+                </div>
+                <div class="Flex">
+                    <div style="width: 50%;">
+                        <button class="M_Btn M_Affirm" style="margin-left: 20%;font-size: 16px;">
+                            确定
+                        </button>
+                    </div>
+                    <div style="width: 50%;">
+                        <button class="M_Btn_info M_Cancel" style="margin-left: 60%;font-size: 16px;">
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 左滑对话框 -->
+        <div class="M_Dialogue_Left">
+            <div class="M_Card">
+                <p class="M_P" style="margin-top: 20px;">
+                    <span style="color: skyblue;font-weight: 700;">|</span>
+                    对话框
+                </p>
+                <div class="M_Dialogue_Content">
+                </div>
+                <div class="Flex">
+                    <div style="width: 50%;">
+                        <button class="M_Btn M_Affirm" style="margin-left: 20%;font-size: 16px;">
+                            确定
+                        </button>
+                    </div>
+                    <div style="width: 50%;">
+                        <button class="M_Btn_info M_Cancel" style="margin-left: 60%;font-size: 16px;">
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右滑 -->
+        <div class="M_Dialogue_Right">
+            <div class="M_Card">
+                <p class="M_P" style="margin-top: 20px;">
+                    <span style="color: skyblue;font-weight: 700;">|</span>
+                    对话框
+                </p>
+                <div class="M_Dialogue_Content">
+                </div>
+                <div class="Flex">
+                    <div style="width: 50%;">
+                        <button class="M_Btn M_Affirm" style="margin-left: 20%;font-size: 16px;">
+                            确定
+                        </button>
+                    </div>
+                    <div style="width: 50%;">
+                        <button class="M_Btn_info M_Cancel" style="margin-left: 60%;font-size: 16px;">
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 居中对话框 -->
+        <div class="M_Dialogue_Center">
+            <div class="M_Card" style="width: 500px;height: 400px;">
+                <p class="M_P" style="margin-top: 20px;">
+                    <span style="color: skyblue;font-weight: 700;">|</span>
+                    对话框
+                </p>
+                <div class="M_Dialogue_Content">
+                    <p>我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</p>
+                </div>
+                <div class="Flex">
+                    <div style="width: 50%;">
+                        <button class="M_Btn M_Affirm" style="margin-left: 20%;font-size: 16px;">
+                            确定
+                        </button>
+                    </div>
+                    <div style="width: 50%;">
+                        <button class="M_Btn_info M_Cancel" style="margin-left: 60%;font-size: 16px;">
+                            取消
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 向下滑出 -->
+        <div class="M_Dialogue_Bottom">
+            <div class="M_Card">
+                <p class="M_P" style="margin-top: 20px;">
+                    <span style="color: skyblue;font-weight: 700;">|</span>
+                    对话框
+                </p>
+                <div class="M_Dialogue_Content">
+
+                </div>
+                <div class="Flex">
+                    <div style="width: 50%;">
+                        <button class="M_Btn M_Affirm" style="margin-left: 20%;font-size: 16px;">
+                            确定
+                        </button>
+                    </div>
+                    <div style="width: 50%;">
+                        <button class="M_Btn_info M_Cancel" style="margin-left: 60%;font-size: 16px;">
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="M_Dialogue_Center">
+            <div class="M_Card" style="width: 400px;height: 200px;">
+                <div class="M_Dialogue_Content">
+
+                </div>
+                <div class="Flex">
+                    <div style="width: 100%;">
+                        <button class="M_Btn_Info M_Affirm" style="font-size: 16px;
+                            width: 80%;
+                            margin: 0 auto;
+                            display: block;">
+                            确定
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="M_Dialogue_Center">
+            <div class="M_Card" style="width: 400px;height: 200px;">
+                <div class="M_Dialogue_Content">
+                    <p class="M_P_Title">
+                        修改密码
+                    </p>
+                    <div style="margin: 10px 5px 10px 70px;">
+                        <input type="text" style="height: 24px;width: 180px;" value="" placeholder="请输入内容"
+                            class="M_Ipt M_ipt_D">
+                    </div>
+                    <div style="margin: 10px 5px 10px 70px;">
+                        <input type="password" style="height: 24px;width: 180px;" placeholder="请输入密码"
+                            class="M_Ipt M_Ipt_Show">
+                    </div>
+                </div>
+
+                <div class="Flex">
+                    <div style="width: 100%;">
+                        <button class="M_Btn_Default M_Affirm" style="font-size: 16px;
+                        width: 80%;
+                        margin: 0 auto;
+                        display: block;">
+                            确定
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../../src/meetion.js"></script>
+<script>
+    $('.M_msg1').click(function () {
+        showMessage('Success', 'success', 2000);
+    })
+    $('.M_msg2').click(function () {
+        showMessage('Error', 'error', 2000);
+    })
+    $('.M_msg3').click(function () {
+        showMessage('Info', 'info', 2000);
+    })
+    $('.M_msg4').click(function () {
+        showMessage('Warning', 'warning', 2000);
+    })
+</script>
+
+</html>
