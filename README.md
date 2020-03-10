@@ -12,7 +12,7 @@
 使用Git 直接克隆 或者下载压缩包 
 
                                 
-  git clone https://github.com/CrazyMrYan/Meetion-UI
+<code>  git clone https://github.com/CrazyMrYan/Meetion-UI </code>
                             
 | 第二步
 
