@@ -3,6 +3,7 @@
 
 使用示例可以去往 http://crazy.lovemysoul.vip/
 
+![](https://img.shields.io/github/stars/CrazyMrYan/Meetion-UI?style=social.svg)
 
 我写了个标准模板在index.html中，也可以看看噢
 
