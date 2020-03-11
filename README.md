@@ -48,11 +48,9 @@
 
 最近更新MeetionUi的0.0.7版本中增加了Breadcrumb，快去更新你的Meetion吧
 <p>If you like, please give me a star :star:</p>
-<p>关注微信公众号“悲伤日记”</p>
-<p align="left">
-  <img width="120" src="http://crazy-x-lovemysoul-x-vip.img.abc188.com/images/beishang.png">
-</p>
-<p>也可以打赏支持一下 </p>
-<p align="left">
-  <img width="180" src="http://crazy-x-lovemysoul-x-vip.img.abc188.com/images/zan.png">
-</p>
+
+<img width="180" src="http://crazy-x-lovemysoul-x-vip.img.abc188.com/images/beishang.png" align="left" >  
+<img  width="180" src="http://crazy-x-lovemysoul-x-vip.img.abc188.com/images/zan.png" align="left" />
+<img  width="180" src="http://crazy-x-lovemysoul-x-vip.img.abc188.com/images/wechat.png" align="left" />
+
+
